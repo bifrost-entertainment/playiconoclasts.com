@@ -1,0 +1,293 @@
+body
+{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    background-image: url("../images/bg.png");
+    background-size: auto;
+}
+
+p 
+{
+    font-size-adjust: auto;
+}
+
+p.center 
+{
+    text-align: center;
+}
+
+p.footer
+{
+    text-align: center;
+}
+
+.video
+{
+  width: 100%;
+  position: relative;
+  padding: 0;
+  padding-bottom: 56%;
+}
+
+.video iframe,
+.video object,
+.video embed 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#banner-container
+{
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+#banner-bg, #banner-logo, #pre-order, #launch-date, #shop-steam, #shop-humble, #shop-gog, #shop-psn, #shop-switch, #shop-xbox, #social-discord, #social-twitter, #social-facebook, #bifrost, #konjak
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#banner-logo
+{
+    background-image: url("../images/logo.png");
+}
+
+#pre-order
+{
+    background-image: url("../images/preorder-now.png");
+}
+
+#launch-date
+{
+    background-image: url("../images/available-now.png");
+}
+
+#shop-container
+{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+#shop-steam
+{
+    z-index: 1000;
+    background-image: url("../images/steam-new.png");
+}
+
+#shop-humble
+{
+    background-image: url("../images/humble.png");
+}
+
+#shop-gog
+{
+    z-index: 1000;
+    background-image: url("../images/gog-new.png");
+}
+
+#shop-psn
+{
+    z-index: 1000;
+    background-image: url("../images/psn-new.png");
+}
+
+#shop-switch
+{
+    z-index:1000;
+    background-image: url("../images/switch-new.png");
+}
+
+#shop-xbox
+{
+    z-index: 1000;
+    background-image: url("../images/xbox-new.png");
+}
+
+#social-container
+{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+#social-discord
+{
+    margin-top: 22px;
+    z-index: 1000;
+    background-image: url("../images/discord.png");
+}
+
+#social-twitter
+{
+    z-index: 1000;
+    background-image: url("../images/twitter.png");
+}
+
+#social-facebook
+{
+    z-index: 1000;
+    background-image: url("../images/facebook.png");
+}
+
+
+#bifrost
+{
+    background-image: url("../images/bifrost.png");
+}
+
+#konjak
+{
+    background-image: url("../images/konjak.png");
+}
+
+.container
+{
+    width: 100%;
+}
+
+.max-container
+{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.min-container
+{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 80%; 
+}
+
+@media all and (min-width: 1281px)
+{
+    p.footer
+    {
+        text-align: center;
+        margin-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    #banner-bg, #banner-logo, #pre-order, #launch-date, #shop-steam, #shop-gog, #shop-psn, #shop-switch, #shop-xbox, #social-discord, #social-twitter, #social-facebook, #shop-humble, #bifrost, #konjak
+    {
+        background-size: contain;
+    }
+
+    #banner-bg
+    {
+        min-width: 1280px;
+        padding-bottom: 800px;
+    }
+
+    #banner-logo
+    {
+        margin-top: -200px;
+        width: 930px;
+        padding-bottom: 185px;
+    }
+
+    #pre-order, #launch-date
+    {
+        margin-top: 15px;
+        padding-top: 20px;
+        padding-bottom: 76px;
+    }
+
+    #shop-steam, #shop-humble, #shop-gog, #shop-psn, #social-discord, #social-twitter, #social-facebook, #shop-switch, #shop-xbox
+    {
+        padding-bottom: 150px;
+    }
+
+    #bifrost, #konjak
+    {
+        padding-bottom: 284px;
+    }
+
+    #shop-container
+    {
+        padding-top: 20px;
+        height: 220px;
+        padding-bottom: 20px;
+    }
+
+    #social-container
+    {
+        padding-top: 200px;
+        height: 220px;
+        padding-bottom: 20px;
+    }
+}
+
+@media all and (max-width: 1280px)
+{
+    p.footer
+    {
+        text-align: center;
+        margin-top: 0.4%;
+        padding-bottom: 0.8%;
+    }
+    
+    #banner-bg, #banner-logo, #pre-order, #launch-date, #shop-steam, #shop-gog, #shop-psn, #shop-switch, #shop-xbox, #shop-humble, #social-discord, #social-twitter, #social-facebook, #bifrost, #konjak
+    {
+        background-size: contain;
+    }
+
+    #banner-bg
+    {
+        min-width: 100%;
+        padding-bottom: 62.5%;
+    }
+    
+    #banner-logo
+    {
+        margin-top: -15.65%;
+        padding-bottom: 14.609375%;
+        width: 72.65625%;
+    }
+
+    #pre-order, #launch-date
+    {
+        margin-top: 2.9%;
+        padding-top: 1%;
+        padding-bottom: 5.9375%;
+        width: 48.75%;
+    }
+        
+    #shop-steam, #shop-humble, #shop-gog, #shop-psn, #shop-switch, #shop-xbox
+    {
+        padding-bottom: 11.71875%;
+    }
+
+    #bifrost, #konjak
+    {
+        padding-bottom: 22.1875%;
+    }
+
+    #shop-container
+    {
+        padding-top: 1.5625%;
+        height: 150px;
+    }
+
+    #social-container
+    {
+        padding-top: 1.5625%;
+        padding-bottom: 2%;
+        height: 300px;
+    }
+
+    #social-discord, #social-twitter, #social-facebook
+    {
+        margin-top: 15%;
+        padding-bottom: 11.71875%;
+    }
+}
